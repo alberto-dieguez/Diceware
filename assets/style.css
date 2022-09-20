@@ -1,0 +1,134 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #40e0d0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 2em;
+	color: #001f3f;
+	font-style: oblique;
+}
+
+label {
+	font-size: 1.3em;
+	color: #001f3f;
+}
+
+#numberOfWords {
+	text-align: center;
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+	border: none;
+	font-size: 2em;
+	margin-top: 1%;
+	margin-bottom: 2%;
+}
+
+#numberOfWords:focus {
+	outline: none;
+	box-shadow: 0px 0px 20px #0066ff;
+	border-radius: 50%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+#button {
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border-radius: 15px 15px;
+}
+
+#button {
+	background-color: #001f3f;
+	color: white;
+	border: 2px solid #555555;
+}
+
+#button:hover {
+	background-color: #555555;
+	color: white;
+}
+
+#button:focus {
+	outline: none;
+}
+
+#block1 {
+	float: left;
+	clear: both;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+#column1 {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#column2 {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#printResult {
+	font-size: 1.1em;
+}
+
+#printPassword {
+	font-size: 1.6em;
+	font-weight: bold;
+	margin-bottom: 10%;
+}
+
+#footer {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-top: 1rem;
+	width: 100%;
+	height: 50px;
+	background: #001f3f;
+	color: beige;
+	font-size: 0.9em;
+}
+
+@media screen and (max-width: 500px) {
+	#footer {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding-top: 9px;
+		width: 100%;
+		height: 50px;
+		background: #001f3f;
+		color: beige;
+		font-size: 0.9em;
+	}
+
+	#linebreak {
+		display: block;
+	}
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/style.css">
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+  <link rel="shortcut icon" href="./assets/logo.png" sizes="32x32">
+  <meta name="google" content="notranslate" />
+  <meta property="og:title" content="Diceware generator"/>
+  <meta property="og:image" content="https://alberto-dieguez.gitlab.io/diceware/assets/logo.png" />
+  <meta property="og:description" content="Passphrase generator with spanish list"/>
+  <meta property="og:url" content="https://alberto-dieguez.gitlab.io/diceware/" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diceware</title>
+</head>
+
+<body>
+  <header>
+    <h1>Diceware Generator with Spanish list</h1>
+  </header>
+  <label>Enter the number of words:</label><br />
+  <form onsubmit="return false">
+    <input type="number" id="numberOfWords" min="1" max="9" value="4" /><br>
+    <input type="submit" id="button" value="Generate Password" onclick="return generatePassword()" />
+  </form>
+  <div id="column1">
+    <div>
+      <h2 id="result">Result</h2>
+      <p id="printResult"></p>
+    </div>
+  </div>
+  <div id="column2">
+    <h2 id="pass">Password</h2>
+    <p id="printPassword"></p>
+  </div>
+  <div id="footer">Alberto Diéguez Álvarez. V1.1 2020. <span id="linebreak"></span>
+    Email:
+    a.dieguez.alvarez@gmail.com
+  </div>
+  <script src="assets/js.js"></script>
+</body>
+
+</html>
